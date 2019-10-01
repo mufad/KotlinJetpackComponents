@@ -32,7 +32,7 @@ class GameOverFragment : Fragment() {
         val binding: FragmentGameOverBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_over, container, false)
         binding.tryAgainButton.setOnClickListener { v: View ->
-            v.findNavController().navigate(R.id.action_gameOverFragment2_to_gameFragment)
+            v.findNavController().navigate(GameOverFragmentDirections.actionGameOverFragment2ToGameFragment())
         }
         return binding.root
     }
